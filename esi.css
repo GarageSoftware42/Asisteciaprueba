@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+header {
+    font-size: 2.5em;
+    color: #00bfff; 
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    background-color: #262626;
+    border: 1px solid #00bfff;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #00bfff;
+}
+
+th {
+    background-color: #333333;
+    color: #00bfff;
+    text-transform: uppercase;
+}
+
+tr:hover {
+    background-color: #333333;
+}
+
+td img {
+    width: 150px;
+    height: 150px;
+}
+
+.label-vino {
+    color: #00ff00;
+}
+
+.label-no {
+    color: #ff0000;
+}
+
+.label-tarde {
+    color: #ffa500;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); 
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #333333;
+    padding: 20px;
+    border: 2px solid #00bfff;
+    width: 50%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.close {
+    color: #ffffff;
+    float: right;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #ff0000;
+}
+
+button {
+    background-color: #00bfff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0080ff;
+}
+
+.foto-container {
+    position: relative;
+    display: inline-block;
+}
+
+.profile-pic {
+    cursor: pointer;
+    border-radius: 50%;
+    transition: opacity 0.3s ease;
+}
+
+.foto-container:hover .profile-pic {
+    opacity: 0.7;
+}
+
+.hover-text {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.foto-container:hover .hover-text {
+    display: block;
+}
+
+.file-input {
+    display: none;
+}
